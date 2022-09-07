@@ -1,2 +1,0 @@
-# dquserinterfaceoop.github.io
-Doc
