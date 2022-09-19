@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['filterpp_2epy_0',['filterPP.py',['../filterPP_8py.html',1,'']]]
+  ['eventselection_2epy_0',['eventSelection.py',['../eventSelection_8py.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['multiplicitytable_0',['multiplicityTable',['../namespacemultiplicityTable.html',1,'']]]
+  ['helperoptions_0',['helperOptions',['../namespacehelperOptions.html',1,'']]]
 ];

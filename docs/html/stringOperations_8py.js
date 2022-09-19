@@ -1,5 +1,5 @@
 var stringOperations_8py =
 [
-    [ "listToString", "stringOperations_8py.html#a5ad0d2eaaf94e7647f08671bcfe7e098", null ],
-    [ "stringToList", "stringOperations_8py.html#a821171603535392d0bfae3fb5befcc76", null ]
+    [ "listToString", "stringOperations_8py.html#a7edb604d0f4bb97279217cf0e53e38d7", null ],
+    [ "stringToList", "stringOperations_8py.html#a78ecee9f13e474ddcaae2f079b215b3f", null ]
 ];

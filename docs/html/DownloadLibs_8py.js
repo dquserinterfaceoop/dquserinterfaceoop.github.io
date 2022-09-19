@@ -28,8 +28,8 @@ var DownloadLibs_8py =
     [ "requestMCSignalsLibrary", "DownloadLibs_8py.html#a2afcce609fa7173921c08e63c3e55554", null ],
     [ "requestMixingLibrary", "DownloadLibs_8py.html#aec5aabb242c1643fb47eb2d67aebc023", null ],
     [ "type", "DownloadLibs_8py.html#a7aead736a07eaf25623ad7bfa1f0ee2d", null ],
-    [ "URL_CUTS_LIBRARY", "DownloadLibs_8py.html#aa9392960133b9c42bf125dcac29efe01", null ],
-    [ "URL_MCSIGNALS_LIBRARY", "DownloadLibs_8py.html#ab40ea5a0f6b9c125770bcf2143ab5150", null ],
-    [ "URL_MIXING_LIBRARY", "DownloadLibs_8py.html#a4ac5f8e3c05d5949d025fc6685e506ce", null ],
+    [ "URL_CUTS_LIBRARY", "DownloadLibs_8py.html#ad9e269dde40bd844c6b0373fefbef919", null ],
+    [ "URL_MCSIGNALS_LIBRARY", "DownloadLibs_8py.html#a377694c1c3e14e7fd3ba3ae2bcfd4776", null ],
+    [ "URL_MIXING_LIBRARY", "DownloadLibs_8py.html#a359cf8be978fe50dd06d4166c9c8d47b", null ],
     [ "version", "DownloadLibs_8py.html#a4c7a521b8f1a0769c09bfa4a1fca7dab", null ]
 ];

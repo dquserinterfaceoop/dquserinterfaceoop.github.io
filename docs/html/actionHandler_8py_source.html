@@ -94,49 +94,61 @@ $(document).ready(function(){initNavTree('actionHandler_8py_source.html',''); in
 <div class="contents">
 <a href="actionHandler_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="namespaceactionHandler.html">    1</a></span><span class="comment">#!/usr/bin/env python</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"># PYTHON_ARGCOMPLETE_OK</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"># -*- coding: utf-8 -*- </span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"># -*- coding: utf-8 -*-</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"># Copyright 2019-2020 CERN and copyright holders of ALICE O2.</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"># See https://alice-o2.web.cern.ch/copyright for details of the copyright holders.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"># All rights not expressly granted are reserved.</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">#</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"># This software is distributed under the terms of the GNU General Public</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"># License v3 (GPL Version 3), copied verbatim in the file &quot;COPYING&quot;.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">#</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"># In applying this license CERN does not waive the privileges and immunities</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"># granted to it by virtue of its status as an Intergovernmental Organization</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"># or submit itself to any jurisdiction.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">import</span> argparse</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">import</span> argparse</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classactionHandler_1_1NoAction.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classactionHandler_1_1NoAction.html">NoAction</a>(argparse.Action):</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="stringliteral">    NoAction </span><span class="keyword">class </span>adds dummy positional arguments to an argument,</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    so sub helper messages can be created</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    Args:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        argparse (Class): Input <span class="keyword">as</span> args</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classactionHandler_1_1NoAction.html#aae7af906a32c4f8bb123982f38866c42">   31</a></span><span class="stringliteral">    </span><span class="keyword">def </span><a class="code hl_function" href="classactionHandler_1_1NoAction.html#aae7af906a32c4f8bb123982f38866c42">__init__</a>(self, **kwargs):</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        kwargs.setdefault(<span class="stringliteral">&quot;default&quot;</span>, argparse.SUPPRESS)</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        kwargs.setdefault(<span class="stringliteral">&quot;nargs&quot;</span>, 0)</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        super(NoAction, self).<a class="code hl_function" href="classactionHandler_1_1NoAction.html#aae7af906a32c4f8bb123982f38866c42">__init__</a>(**kwargs)</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classactionHandler_1_1NoAction.html#ad88a7f839c218643d8554f0b8554925a">   36</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classactionHandler_1_1NoAction.html#ad88a7f839c218643d8554f0b8554925a">__call__</a>(self, parser, namespace, values, option_string=None):</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">pass</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classactionHandler_1_1ChoicesAction.html">   40</a></span><span class="keyword">class </span>ChoicesAction(argparse._StoreAction):</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="stringliteral">    ChoicesAction </span><span class="keyword">class </span>is used to add extra <a class="code hl_variable" href="classactionHandler_1_1ChoicesAction.html#a364cdd17dd69b9ddcc95e8733eb18272">choices</a></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    to a parseargs choices list</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    Args:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        argparse (Class): Input <span class="keyword">as</span> args</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classactionHandler_1_1ChoicesAction.html#afb801cc51202f7e9fb9d4ecc321e24ce">   49</a></span><span class="stringliteral">    </span><span class="keyword">def </span><a class="code hl_function" href="classactionHandler_1_1ChoicesAction.html#afb801cc51202f7e9fb9d4ecc321e24ce">add_choice</a>(self, choice, help=&quot;&quot;):</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">if</span> self.<a class="code hl_variable" href="classactionHandler_1_1ChoicesAction.html#a364cdd17dd69b9ddcc95e8733eb18272">choices</a> <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classactionHandler_1_1ChoicesAction.html#a364cdd17dd69b9ddcc95e8733eb18272">   51</a></span>            self.<a class="code hl_variable" href="classactionHandler_1_1ChoicesAction.html#a364cdd17dd69b9ddcc95e8733eb18272">choices</a> = []</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        self.<a class="code hl_variable" href="classactionHandler_1_1ChoicesAction.html#a364cdd17dd69b9ddcc95e8733eb18272">choices</a>.append(choice)</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        self.container.add_argument(choice, help=help, action=<span class="stringliteral">&quot;none&quot;</span>)</div>
-<div class="ttc" id="aclassactionHandler_1_1ChoicesAction_html_a364cdd17dd69b9ddcc95e8733eb18272"><div class="ttname"><a href="classactionHandler_1_1ChoicesAction.html#a364cdd17dd69b9ddcc95e8733eb18272">actionHandler.ChoicesAction.choices</a></div><div class="ttdeci">choices</div><div class="ttdef"><b>Definition:</b> <a href="actionHandler_8py_source.html#l00051">actionHandler.py:51</a></div></div>
-<div class="ttc" id="aclassactionHandler_1_1ChoicesAction_html_afb801cc51202f7e9fb9d4ecc321e24ce"><div class="ttname"><a href="classactionHandler_1_1ChoicesAction.html#afb801cc51202f7e9fb9d4ecc321e24ce">actionHandler.ChoicesAction.add_choice</a></div><div class="ttdeci">def add_choice(self, choice, help=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="actionHandler_8py_source.html#l00049">actionHandler.py:49</a></div></div>
-<div class="ttc" id="aclassactionHandler_1_1NoAction_html"><div class="ttname"><a href="classactionHandler_1_1NoAction.html">actionHandler.NoAction</a></div><div class="ttdef"><b>Definition:</b> <a href="actionHandler_8py_source.html#l00022">actionHandler.py:22</a></div></div>
-<div class="ttc" id="aclassactionHandler_1_1NoAction_html_aae7af906a32c4f8bb123982f38866c42"><div class="ttname"><a href="classactionHandler_1_1NoAction.html#aae7af906a32c4f8bb123982f38866c42">actionHandler.NoAction.__init__</a></div><div class="ttdeci">def __init__(self, **kwargs)</div><div class="ttdef"><b>Definition:</b> <a href="actionHandler_8py_source.html#l00031">actionHandler.py:31</a></div></div>
-<div class="ttc" id="aclassactionHandler_1_1NoAction_html_ad88a7f839c218643d8554f0b8554925a"><div class="ttname"><a href="classactionHandler_1_1NoAction.html#ad88a7f839c218643d8554f0b8554925a">actionHandler.NoAction.__call__</a></div><div class="ttdeci">def __call__(self, parser, namespace, values, option_string=None)</div><div class="ttdef"><b>Definition:</b> <a href="actionHandler_8py_source.html#l00036">actionHandler.py:36</a></div></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classactionHandler_1_1NoAction.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="classactionHandler_1_1NoAction.html">NoAction</a>(argparse.Action):</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="stringliteral">    NoAction </span><span class="keyword">class </span>adds dummy positional arguments to an argument,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    so sub helper messages can be created</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    Args:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        argparse (Class): Input <span class="keyword">as</span> args</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="stringliteral">    </span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classactionHandler_1_1NoAction.html#aae7af906a32c4f8bb123982f38866c42">   29</a></span><span class="stringliteral">    </span><span class="keyword">def </span><a class="code hl_function" href="classactionHandler_1_1NoAction.html#aae7af906a32c4f8bb123982f38866c42">__init__</a>(self, **kwargs):</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        kwargs.setdefault(<span class="stringliteral">&quot;default&quot;</span>, argparse.SUPPRESS)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        kwargs.setdefault(<span class="stringliteral">&quot;nargs&quot;</span>, 0)</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        super(NoAction, self).<a class="code hl_function" href="classactionHandler_1_1NoAction.html#aae7af906a32c4f8bb123982f38866c42">__init__</a>(**kwargs)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classactionHandler_1_1NoAction.html#ad88a7f839c218643d8554f0b8554925a">   34</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classactionHandler_1_1NoAction.html#ad88a7f839c218643d8554f0b8554925a">__call__</a>(self, parser, namespace, values, option_string = None):</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">pass</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classactionHandler_1_1ChoicesAction.html">   38</a></span><span class="keyword">class </span>ChoicesAction(argparse._StoreAction):</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="stringliteral">    ChoicesAction </span><span class="keyword">class </span>is used to add extra <a class="code hl_variable" href="classactionHandler_1_1ChoicesAction.html#a364cdd17dd69b9ddcc95e8733eb18272">choices</a></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    to a parseargs choices list</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Args:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        argparse (Class): Input <span class="keyword">as</span> args</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="stringliteral">    </span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classactionHandler_1_1ChoicesAction.html#afb801cc51202f7e9fb9d4ecc321e24ce">   48</a></span><span class="stringliteral">    </span><span class="keyword">def </span><a class="code hl_function" href="classactionHandler_1_1ChoicesAction.html#afb801cc51202f7e9fb9d4ecc321e24ce">add_choice</a>(self, choice, help = &quot;&quot;):</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">if</span> self.<a class="code hl_variable" href="classactionHandler_1_1ChoicesAction.html#a364cdd17dd69b9ddcc95e8733eb18272">choices</a> <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classactionHandler_1_1ChoicesAction.html#a364cdd17dd69b9ddcc95e8733eb18272">   50</a></span>            self.<a class="code hl_variable" href="classactionHandler_1_1ChoicesAction.html#a364cdd17dd69b9ddcc95e8733eb18272">choices</a> = []</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        self.<a class="code hl_variable" href="classactionHandler_1_1ChoicesAction.html#a364cdd17dd69b9ddcc95e8733eb18272">choices</a>.append(choice)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        self.container.add_argument(choice, help = help, action = <span class="stringliteral">&quot;none&quot;</span>)</div>
+<div class="ttc" id="aclassactionHandler_1_1ChoicesAction_html_a364cdd17dd69b9ddcc95e8733eb18272"><div class="ttname"><a href="classactionHandler_1_1ChoicesAction.html#a364cdd17dd69b9ddcc95e8733eb18272">actionHandler.ChoicesAction.choices</a></div><div class="ttdeci">choices</div><div class="ttdef"><b>Definition:</b> <a href="actionHandler_8py_source.html#l00050">actionHandler.py:50</a></div></div>
+<div class="ttc" id="aclassactionHandler_1_1ChoicesAction_html_afb801cc51202f7e9fb9d4ecc321e24ce"><div class="ttname"><a href="classactionHandler_1_1ChoicesAction.html#afb801cc51202f7e9fb9d4ecc321e24ce">actionHandler.ChoicesAction.add_choice</a></div><div class="ttdeci">def add_choice(self, choice, help=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="actionHandler_8py_source.html#l00048">actionHandler.py:48</a></div></div>
+<div class="ttc" id="aclassactionHandler_1_1NoAction_html"><div class="ttname"><a href="classactionHandler_1_1NoAction.html">actionHandler.NoAction</a></div><div class="ttdef"><b>Definition:</b> <a href="actionHandler_8py_source.html#l00019">actionHandler.py:19</a></div></div>
+<div class="ttc" id="aclassactionHandler_1_1NoAction_html_aae7af906a32c4f8bb123982f38866c42"><div class="ttname"><a href="classactionHandler_1_1NoAction.html#aae7af906a32c4f8bb123982f38866c42">actionHandler.NoAction.__init__</a></div><div class="ttdeci">def __init__(self, **kwargs)</div><div class="ttdef"><b>Definition:</b> <a href="actionHandler_8py_source.html#l00029">actionHandler.py:29</a></div></div>
+<div class="ttc" id="aclassactionHandler_1_1NoAction_html_ad88a7f839c218643d8554f0b8554925a"><div class="ttname"><a href="classactionHandler_1_1NoAction.html#ad88a7f839c218643d8554f0b8554925a">actionHandler.NoAction.__call__</a></div><div class="ttdeci">def __call__(self, parser, namespace, values, option_string=None)</div><div class="ttdef"><b>Definition:</b> <a href="actionHandler_8py_source.html#l00034">actionHandler.py:34</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

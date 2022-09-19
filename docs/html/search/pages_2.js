@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['prerequisites_21_21_21_0',['Prerequisites!!!',['../md_doc_2_Prerequisites.html',1,'']]],
-  ['python_20scripts_20and_20json_20configs_1',['Python Scripts And JSON Configs',['../md_doc_1_ScriptsAndConfigs.html',1,'']]]
+  ['instructions_20for_20python_20scripts_0',['Instructions For Python Scripts',['../md_doc_5_InstructionsForPythonScripts.html',1,'']]],
+  ['instructions_20for_20tab_20autocomplete_1',['Instructions for TAB Autocomplete',['../md_doc_3_InstructionsforTABAutocomplete.html',1,'']]]
 ];

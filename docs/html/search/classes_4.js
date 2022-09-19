@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['multiplicitytable_0',['MultiplicityTable',['../classmultiplicityTable_1_1MultiplicityTable.html',1,'multiplicityTable']]]
+  ['forgettedargserror_0',['ForgettedArgsError',['../classdqExceptions_1_1ForgettedArgsError.html',1,'dqExceptions']]]
 ];

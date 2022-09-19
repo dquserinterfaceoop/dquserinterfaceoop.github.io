@@ -118,12 +118,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ad3a859af61de88240b60790a84f13039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">Class for Interface -&gt; pidTOFbeta.cxx Task -&gt; Configurable, Process Functions  
+<div class="textblock"><pre class="fragment">Class for Interface -&gt; pidTOFbeta.cxx Task -&gt; Configurable, Process Functions
 
 Args:
     object (parser_args() object): pidTOFbeta.cxx Interface
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pidTOFBeta_8py_source.html#l00023">23</a> of file <a class="el" href="pidTOFBeta_8py_source.html">pidTOFBeta.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pidTOFBeta_8py_source.html#l00021">21</a> of file <a class="el" href="pidTOFBeta_8py_source.html">pidTOFBeta.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a047550fe623f8c42744c169654e66e33" name="a047550fe623f8c42744c169654e66e33"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a047550fe623f8c42744c169654e66e33">&#9670;&#160;</a></span>__init__()</h2>
@@ -141,7 +141,7 @@ Args:
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>parserTofPidBeta</em> = <code>argparse.ArgumentParser(add_help=False)</code>&#160;</td>
+          <td class="paramname"><em>parserTofPidBeta</em> = <code>argparse.ArgumentParser(add_help&#160;=&#160;False)</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -151,11 +151,11 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pidTOFBeta_8py_source.html#l00031">31</a> of file <a class="el" href="pidTOFBeta_8py_source.html">pidTOFBeta.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   31</span>    <span class="keyword">def </span>__init__(self, parserTofPidBeta=argparse.ArgumentParser(add_help=<span class="keyword">False</span>)):</div>
-<div class="line"><span class="lineno">   32</span>        super(TofPidBeta, self).__init__()</div>
-<div class="line"><span class="lineno">   33</span>        self.parserTofPidBeta = parserTofPidBeta</div>
-<div class="line"><span class="lineno">   34</span> </div>
+<p class="definition">Definition at line <a class="el" href="pidTOFBeta_8py_source.html#l00030">30</a> of file <a class="el" href="pidTOFBeta_8py_source.html">pidTOFBeta.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>    <span class="keyword">def </span>__init__(self, parserTofPidBeta = argparse.ArgumentParser(add_help = <span class="keyword">False</span>)):</div>
+<div class="line"><span class="lineno">   31</span>        super(TofPidBeta, self).__init__()</div>
+<div class="line"><span class="lineno">   32</span>        self.parserTofPidBeta = parserTofPidBeta</div>
+<div class="line"><span class="lineno">   33</span>    </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -177,16 +177,18 @@ Args:
 </div><div class="memdoc">
 <pre class="fragment">This function allows to add arguments for parser_args() function
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pidTOFBeta_8py_source.html#l00035">35</a> of file <a class="el" href="pidTOFBeta_8py_source.html">pidTOFBeta.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>    <span class="keyword">def </span>addArguments(self):</div>
-<div class="line"><span class="lineno">   36</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   37</span><span class="stringliteral">        This function allows to add arguments </span><span class="keywordflow">for</span> parser_args() function</div>
-<div class="line"><span class="lineno">   38</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   39</span><span class="stringliteral">    </span></div>
-<div class="line"><span class="lineno">   40</span><span class="stringliteral">        </span><span class="comment"># Interface</span></div>
-<div class="line"><span class="lineno">   41</span>        groupTofPidbeta = self.parserTofPidBeta.add_argument_group(title=<span class="stringliteral">&quot;Data processor options: tof-pid-beta&quot;</span>)</div>
-<div class="line"><span class="lineno">   42</span>        groupTofPidbeta.add_argument(<span class="stringliteral">&quot;--tof-expreso&quot;</span>, help=<span class="stringliteral">&quot;Expected resolution for the computation of the expected beta&quot;</span>, action=<span class="stringliteral">&quot;store&quot;</span>, type=str)</div>
-<div class="line"><span class="lineno">   43</span>            </div>
+<p class="definition">Definition at line <a class="el" href="pidTOFBeta_8py_source.html#l00034">34</a> of file <a class="el" href="pidTOFBeta_8py_source.html">pidTOFBeta.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>    <span class="keyword">def </span>addArguments(self):</div>
+<div class="line"><span class="lineno">   35</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   36</span><span class="stringliteral">        This function allows to add arguments </span><span class="keywordflow">for</span> parser_args() function</div>
+<div class="line"><span class="lineno">   37</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   38</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">   39</span><span class="stringliteral">        </span><span class="comment"># Interface</span></div>
+<div class="line"><span class="lineno">   40</span>        groupTofPidbeta = self.parserTofPidBeta.add_argument_group(title = <span class="stringliteral">&quot;Data processor options: tof-pid-beta&quot;</span>)</div>
+<div class="line"><span class="lineno">   41</span>        groupTofPidbeta.add_argument(</div>
+<div class="line"><span class="lineno">   42</span>            <span class="stringliteral">&quot;--tof-expreso&quot;</span>, help = <span class="stringliteral">&quot;Expected resolution for the computation of the expected beta&quot;</span>, action = <span class="stringliteral">&quot;store&quot;</span>, type = str,</div>
+<div class="line"><span class="lineno">   43</span>            )</div>
+<div class="line"><span class="lineno">   44</span>    </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,16 +212,16 @@ Args:
 Returns:
     Namespace: returns parse_args()
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pidTOFBeta_8py_source.html#l00044">44</a> of file <a class="el" href="pidTOFBeta_8py_source.html">pidTOFBeta.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>    <span class="keyword">def </span>parseArgs(self):</div>
-<div class="line"><span class="lineno">   45</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   46</span><span class="stringliteral">        This function allows to save the obtained arguments to the parser_args() function</span></div>
-<div class="line"><span class="lineno">   47</span><span class="stringliteral">        </span></div>
-<div class="line"><span class="lineno">   48</span><span class="stringliteral">        Returns:</span></div>
-<div class="line"><span class="lineno">   49</span><span class="stringliteral">            Namespace: returns parse_args()</span></div>
-<div class="line"><span class="lineno">   50</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   51</span><span class="stringliteral">        </span></div>
-<div class="line"><span class="lineno">   52</span><span class="stringliteral">        </span><span class="keywordflow">return</span> self.parserTofPidBeta.parse_args()</div>
+<p class="definition">Definition at line <a class="el" href="pidTOFBeta_8py_source.html#l00045">45</a> of file <a class="el" href="pidTOFBeta_8py_source.html">pidTOFBeta.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>    <span class="keyword">def </span>parseArgs(self):</div>
+<div class="line"><span class="lineno">   46</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   47</span><span class="stringliteral">        This function allows to save the obtained arguments to the parser_args() function</span></div>
+<div class="line"><span class="lineno">   48</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   49</span><span class="stringliteral">        Returns:</span></div>
+<div class="line"><span class="lineno">   50</span><span class="stringliteral">            Namespace: returns parse_args()</span></div>
+<div class="line"><span class="lineno">   51</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   52</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">   53</span><span class="stringliteral">        </span><span class="keywordflow">return</span> self.parserTofPidBeta.parse_args()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -236,7 +238,7 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pidTOFBeta_8py_source.html#l00033">33</a> of file <a class="el" href="pidTOFBeta_8py_source.html">pidTOFBeta.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pidTOFBeta_8py_source.html#l00032">32</a> of file <a class="el" href="pidTOFBeta_8py_source.html">pidTOFBeta.py</a>.</p>
 
 </div>
 </div>

@@ -118,12 +118,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab329e954ec93e6ced43096c81679153d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">Class for Interface -&gt; pidTPCFull.cxx and pidTOFFull.cxx Task -&gt; Configurable, Process Functions  
+<div class="textblock"><pre class="fragment">Class for Interface -&gt; pidTPCFull.cxx and pidTOFFull.cxx Task -&gt; Configurable, Process Functions
 
 Args:
     object (parser_args() object): pidTPCFull.cxx and pidTOFFull.cxx Interface
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pidTPCTOFFull_8py_source.html#l00027">27</a> of file <a class="el" href="pidTPCTOFFull_8py_source.html">pidTPCTOFFull.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pidTPCTOFFull_8py_source.html#l00025">25</a> of file <a class="el" href="pidTPCTOFFull_8py_source.html">pidTPCTOFFull.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3924efce43cc0ec043ffc5f09c057798" name="a3924efce43cc0ec043ffc5f09c057798"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3924efce43cc0ec043ffc5f09c057798">&#9670;&#160;</a></span>__init__()</h2>
@@ -141,7 +141,7 @@ Args:
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>parserTpcTofPidFull</em> = <code>argparse.ArgumentParser(add_help=False)</code>&#160;</td>
+          <td class="paramname"><em>parserTpcTofPidFull</em> = <code>argparse.ArgumentParser(add_help&#160;=&#160;False)</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -151,11 +151,11 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pidTPCTOFFull_8py_source.html#l00035">35</a> of file <a class="el" href="pidTPCTOFFull_8py_source.html">pidTPCTOFFull.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>    <span class="keyword">def </span>__init__(self, parserTpcTofPidFull=argparse.ArgumentParser(add_help=<span class="keyword">False</span>)):</div>
-<div class="line"><span class="lineno">   36</span>        super(TpcTofPidFull, self).__init__()</div>
-<div class="line"><span class="lineno">   37</span>        self.parserTpcTofPidFull = parserTpcTofPidFull</div>
-<div class="line"><span class="lineno">   38</span> </div>
+<p class="definition">Definition at line <a class="el" href="pidTPCTOFFull_8py_source.html#l00034">34</a> of file <a class="el" href="pidTPCTOFFull_8py_source.html">pidTPCTOFFull.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>    <span class="keyword">def </span>__init__(self, parserTpcTofPidFull = argparse.ArgumentParser(add_help = <span class="keyword">False</span>)):</div>
+<div class="line"><span class="lineno">   35</span>        super(TpcTofPidFull, self).__init__()</div>
+<div class="line"><span class="lineno">   36</span>        self.parserTpcTofPidFull = parserTpcTofPidFull</div>
+<div class="line"><span class="lineno">   37</span>    </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -177,40 +177,54 @@ Args:
 </div><div class="memdoc">
 <pre class="fragment">This function allows to add arguments for parser_args() function
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pidTPCTOFFull_8py_source.html#l00039">39</a> of file <a class="el" href="pidTPCTOFFull_8py_source.html">pidTPCTOFFull.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   39</span>    <span class="keyword">def </span>addArguments(self):</div>
-<div class="line"><span class="lineno">   40</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   41</span><span class="stringliteral">        This function allows to add arguments </span><span class="keywordflow">for</span> parser_args() function</div>
-<div class="line"><span class="lineno">   42</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   43</span><span class="stringliteral"></span> </div>
-<div class="line"><span class="lineno">   44</span><span class="stringliteral">        </span><span class="comment"># Predefined Selections</span></div>
-<div class="line"><span class="lineno">   45</span>        pidSelections = {</div>
-<div class="line"><span class="lineno">   46</span>            <span class="stringliteral">&quot;el&quot;</span>: <span class="stringliteral">&quot;Produce PID information for the Electron mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
-<div class="line"><span class="lineno">   47</span>            <span class="stringliteral">&quot;mu&quot;</span>: <span class="stringliteral">&quot;Produce PID information for the Muon mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
-<div class="line"><span class="lineno">   48</span>            <span class="stringliteral">&quot;pi&quot;</span>: <span class="stringliteral">&quot;Produce PID information for the Pion mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
-<div class="line"><span class="lineno">   49</span>            <span class="stringliteral">&quot;ka&quot;</span>: <span class="stringliteral">&quot;Produce PID information for the Kaon mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
-<div class="line"><span class="lineno">   50</span>            <span class="stringliteral">&quot;pr&quot;</span>: <span class="stringliteral">&quot;Produce PID information for the Proton mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
-<div class="line"><span class="lineno">   51</span>            <span class="stringliteral">&quot;de&quot;</span>: <span class="stringliteral">&quot;Produce PID information for the Deuterons mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
-<div class="line"><span class="lineno">   52</span>            <span class="stringliteral">&quot;tr&quot;</span>: <span class="stringliteral">&quot;Produce PID information for the Triton mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
-<div class="line"><span class="lineno">   53</span>            <span class="stringliteral">&quot;he&quot;</span>: <span class="stringliteral">&quot;Produce PID information for the Helium3 mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
-<div class="line"><span class="lineno">   54</span>            <span class="stringliteral">&quot;al&quot;</span>: <span class="stringliteral">&quot;Produce PID information for the Alpha mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span></div>
-<div class="line"><span class="lineno">   55</span>        }</div>
-<div class="line"><span class="lineno">   56</span>        pidSelectionsList = []</div>
-<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">for</span> k, v <span class="keywordflow">in</span> pidSelections.items():</div>
-<div class="line"><span class="lineno">   58</span>            pidSelectionsList.append(k)</div>
-<div class="line"><span class="lineno">   59</span>        </div>
-<div class="line"><span class="lineno">   60</span>        booleanSelections = [<span class="stringliteral">&quot;true&quot;</span>, <span class="stringliteral">&quot;false&quot;</span>]</div>
-<div class="line"><span class="lineno">   61</span> </div>
-<div class="line"><span class="lineno">   62</span>        <span class="comment"># Interface</span></div>
-<div class="line"><span class="lineno">   63</span>        groupPID = self.parserTpcTofPidFull.add_argument_group(title=<span class="stringliteral">&quot;Data processor options: tpc-pid-full, tof-pid-full&quot;</span>)</div>
-<div class="line"><span class="lineno">   64</span>        groupPID.add_argument(<span class="stringliteral">&quot;--pid&quot;</span>, help=<span class="stringliteral">&quot;Produce PID information for the &lt;particle&gt; mass hypothesis&quot;</span>, action=<span class="stringliteral">&quot;store&quot;</span>, nargs=<span class="stringliteral">&quot;*&quot;</span>, type=str.lower, metavar=<span class="stringliteral">&quot;PID&quot;</span>, choices=pidSelectionsList).completer = ChoicesCompleterList(pidSelectionsList)</div>
-<div class="line"><span class="lineno">   65</span> </div>
-<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">for</span> key,value <span class="keywordflow">in</span> pidSelections.items():</div>
-<div class="line"><span class="lineno">   67</span>            groupPID.add_argument(key, help=value, action = <span class="stringliteral">&quot;none&quot;</span>)</div>
-<div class="line"><span class="lineno">   68</span>             </div>
-<div class="line"><span class="lineno">   69</span>        groupTofPid = self.parserTpcTofPidFull.add_argument_group(title=<span class="stringliteral">&quot;Data processor options: tof-pid, tof-pid-full&quot;</span>)   </div>
-<div class="line"><span class="lineno">   70</span>        groupTofPid.add_argument(<span class="stringliteral">&quot;--isWSlice&quot;</span>, help=<span class="stringliteral">&quot;Process with track slices&quot;</span>, action=<span class="stringliteral">&quot;store&quot;</span>,type=str.lower, choices=booleanSelections).completer = ChoicesCompleter(booleanSelections)</div>
-<div class="line"><span class="lineno">   71</span>            </div>
+<p class="definition">Definition at line <a class="el" href="pidTPCTOFFull_8py_source.html#l00038">38</a> of file <a class="el" href="pidTPCTOFFull_8py_source.html">pidTPCTOFFull.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>    <span class="keyword">def </span>addArguments(self):</div>
+<div class="line"><span class="lineno">   39</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   40</span><span class="stringliteral">        This function allows to add arguments </span><span class="keywordflow">for</span> parser_args() function</div>
+<div class="line"><span class="lineno">   41</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   42</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">   43</span><span class="stringliteral">        </span><span class="comment"># Predefined Selections</span></div>
+<div class="line"><span class="lineno">   44</span>        pidSelections = {</div>
+<div class="line"><span class="lineno">   45</span>            <span class="stringliteral">&quot;el&quot;</span>:</div>
+<div class="line"><span class="lineno">   46</span>                <span class="stringliteral">&quot;Produce PID information for the Electron mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
+<div class="line"><span class="lineno">   47</span>            <span class="stringliteral">&quot;mu&quot;</span>:</div>
+<div class="line"><span class="lineno">   48</span>                <span class="stringliteral">&quot;Produce PID information for the Muon mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
+<div class="line"><span class="lineno">   49</span>            <span class="stringliteral">&quot;pi&quot;</span>:</div>
+<div class="line"><span class="lineno">   50</span>                <span class="stringliteral">&quot;Produce PID information for the Pion mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
+<div class="line"><span class="lineno">   51</span>            <span class="stringliteral">&quot;ka&quot;</span>:</div>
+<div class="line"><span class="lineno">   52</span>                <span class="stringliteral">&quot;Produce PID information for the Kaon mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
+<div class="line"><span class="lineno">   53</span>            <span class="stringliteral">&quot;pr&quot;</span>:</div>
+<div class="line"><span class="lineno">   54</span>                <span class="stringliteral">&quot;Produce PID information for the Proton mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
+<div class="line"><span class="lineno">   55</span>            <span class="stringliteral">&quot;de&quot;</span>:</div>
+<div class="line"><span class="lineno">   56</span>                <span class="stringliteral">&quot;Produce PID information for the Deuterons mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
+<div class="line"><span class="lineno">   57</span>            <span class="stringliteral">&quot;tr&quot;</span>:</div>
+<div class="line"><span class="lineno">   58</span>                <span class="stringliteral">&quot;Produce PID information for the Triton mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
+<div class="line"><span class="lineno">   59</span>            <span class="stringliteral">&quot;he&quot;</span>:</div>
+<div class="line"><span class="lineno">   60</span>                <span class="stringliteral">&quot;Produce PID information for the Helium3 mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
+<div class="line"><span class="lineno">   61</span>            <span class="stringliteral">&quot;al&quot;</span>:</div>
+<div class="line"><span class="lineno">   62</span>                <span class="stringliteral">&quot;Produce PID information for the Alpha mass hypothesis, overrides the automatic setup: the corresponding table can be set off (0) or on (1)&quot;</span>,</div>
+<div class="line"><span class="lineno">   63</span>            }</div>
+<div class="line"><span class="lineno">   64</span>        pidSelectionsList = []</div>
+<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">for</span> k, v <span class="keywordflow">in</span> pidSelections.items():</div>
+<div class="line"><span class="lineno">   66</span>            pidSelectionsList.append(k)</div>
+<div class="line"><span class="lineno">   67</span>        </div>
+<div class="line"><span class="lineno">   68</span>        booleanSelections = [<span class="stringliteral">&quot;true&quot;</span>, <span class="stringliteral">&quot;false&quot;</span>]</div>
+<div class="line"><span class="lineno">   69</span>        </div>
+<div class="line"><span class="lineno">   70</span>        <span class="comment"># Interface</span></div>
+<div class="line"><span class="lineno">   71</span>        groupPID = self.parserTpcTofPidFull.add_argument_group(title = <span class="stringliteral">&quot;Data processor options: tpc-pid-full, tof-pid-full&quot;</span>)</div>
+<div class="line"><span class="lineno">   72</span>        groupPID.add_argument(</div>
+<div class="line"><span class="lineno">   73</span>            <span class="stringliteral">&quot;--pid&quot;</span>, help = <span class="stringliteral">&quot;Produce PID information for the &lt;particle&gt; mass hypothesis&quot;</span>, action = <span class="stringliteral">&quot;store&quot;</span>, nargs = <span class="stringliteral">&quot;*&quot;</span>, type = str.lower,</div>
+<div class="line"><span class="lineno">   74</span>            metavar = <span class="stringliteral">&quot;PID&quot;</span>, choices = pidSelectionsList,</div>
+<div class="line"><span class="lineno">   75</span>            ).completer = ChoicesCompleterList(pidSelectionsList)</div>
+<div class="line"><span class="lineno">   76</span>        </div>
+<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">for</span> key, value <span class="keywordflow">in</span> pidSelections.items():</div>
+<div class="line"><span class="lineno">   78</span>            groupPID.add_argument(key, help = value, action = <span class="stringliteral">&quot;none&quot;</span>)</div>
+<div class="line"><span class="lineno">   79</span>        </div>
+<div class="line"><span class="lineno">   80</span>        groupTofPid = self.parserTpcTofPidFull.add_argument_group(title = <span class="stringliteral">&quot;Data processor options: tof-pid, tof-pid-full&quot;</span>)</div>
+<div class="line"><span class="lineno">   81</span>        groupTofPid.add_argument(</div>
+<div class="line"><span class="lineno">   82</span>            <span class="stringliteral">&quot;--isWSlice&quot;</span>, help = <span class="stringliteral">&quot;Process with track slices&quot;</span>, action = <span class="stringliteral">&quot;store&quot;</span>, type = str.lower, choices = booleanSelections,</div>
+<div class="line"><span class="lineno">   83</span>            ).completer = ChoicesCompleter(booleanSelections)</div>
+<div class="line"><span class="lineno">   84</span>    </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -234,16 +248,16 @@ Args:
 Returns:
     Namespace: returns parse_args()
 </pre> 
-<p class="definition">Definition at line <a class="el" href="pidTPCTOFFull_8py_source.html#l00072">72</a> of file <a class="el" href="pidTPCTOFFull_8py_source.html">pidTPCTOFFull.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   72</span>    <span class="keyword">def </span>parseArgs(self):</div>
-<div class="line"><span class="lineno">   73</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   74</span><span class="stringliteral">        This function allows to save the obtained arguments to the parser_args() function</span></div>
-<div class="line"><span class="lineno">   75</span><span class="stringliteral">        </span></div>
-<div class="line"><span class="lineno">   76</span><span class="stringliteral">        Returns:</span></div>
-<div class="line"><span class="lineno">   77</span><span class="stringliteral">            Namespace: returns parse_args()</span></div>
-<div class="line"><span class="lineno">   78</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   79</span><span class="stringliteral">        </span></div>
-<div class="line"><span class="lineno">   80</span><span class="stringliteral">        </span><span class="keywordflow">return</span> self.parserTpcTofPidFull.parse_args()</div>
+<p class="definition">Definition at line <a class="el" href="pidTPCTOFFull_8py_source.html#l00085">85</a> of file <a class="el" href="pidTPCTOFFull_8py_source.html">pidTPCTOFFull.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>    <span class="keyword">def </span>parseArgs(self):</div>
+<div class="line"><span class="lineno">   86</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   87</span><span class="stringliteral">        This function allows to save the obtained arguments to the parser_args() function</span></div>
+<div class="line"><span class="lineno">   88</span><span class="stringliteral"></span> </div>
+<div class="line"><span class="lineno">   89</span><span class="stringliteral">        Returns:</span></div>
+<div class="line"><span class="lineno">   90</span><span class="stringliteral">            Namespace: returns parse_args()</span></div>
+<div class="line"><span class="lineno">   91</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   92</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">   93</span><span class="stringliteral">        </span><span class="keywordflow">return</span> self.parserTpcTofPidFull.parse_args()</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -260,7 +274,7 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pidTPCTOFFull_8py_source.html#l00037">37</a> of file <a class="el" href="pidTPCTOFFull_8py_source.html">pidTPCTOFFull.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pidTPCTOFFull_8py_source.html#l00036">36</a> of file <a class="el" href="pidTPCTOFFull_8py_source.html">pidTPCTOFFull.py</a>.</p>
 
 </div>
 </div>

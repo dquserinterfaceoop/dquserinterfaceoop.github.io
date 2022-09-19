@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['user_20python_20based_20interface_0',['User Python Based Interface',['../index.html',1,'']]]
+  ['technical_20informations_0',['Technical Informations',['../md_doc_4_TechincalInformations.html',1,'']]],
+  ['tutorial_20part_1',['Tutorial Part',['../md_doc_6_Tutorials.html',1,'']]]
 ];

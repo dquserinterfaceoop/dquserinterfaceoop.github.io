@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['listtostring_0',['listToString',['../namespacestringOperations.html#a5ad0d2eaaf94e7647f08671bcfe7e098',1,'stringOperations']]]
+  ['debugsettings_0',['debugSettings',['../namespacedebugSettings.html#afe7330d80db486232b8427220e2e08a9',1,'debugSettings']]],
+  ['dispargs_1',['dispArgs',['../namespacemonitoring.html#a86ada52821a6ae000ec7df291339d37f',1,'monitoring']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['v0selector_2epy_0',['v0selector.py',['../v0selector_8py.html',1,'']]]
+  ['stringoperations_2epy_0',['stringOperations.py',['../stringOperations_8py.html',1,'']]]
 ];

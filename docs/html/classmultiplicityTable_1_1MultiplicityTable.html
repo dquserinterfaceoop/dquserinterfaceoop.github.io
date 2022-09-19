@@ -118,12 +118,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a24b7da5f24d42e0bf8460bd0524831a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">Class for Interface -&gt; multiplicityTable.cxx Task -&gt; Configurable, Process Functions  
+<div class="textblock"><pre class="fragment">Class for Interface -&gt; multiplicityTable.cxx Task -&gt; Configurable, Process Functions
 
 Args:
     object (parser_args() object): multiplicityTable.cxx Interface
 </pre> 
-<p class="definition">Definition at line <a class="el" href="multiplicityTable_8py_source.html#l00025">25</a> of file <a class="el" href="multiplicityTable_8py_source.html">multiplicityTable.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multiplicityTable_8py_source.html#l00023">23</a> of file <a class="el" href="multiplicityTable_8py_source.html">multiplicityTable.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afcbcf43b0035e01461da22d6cc76960d" name="afcbcf43b0035e01461da22d6cc76960d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afcbcf43b0035e01461da22d6cc76960d">&#9670;&#160;</a></span>__init__()</h2>
@@ -141,7 +141,7 @@ Args:
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>parserMultiplicityTable</em> = <code>argparse.ArgumentParser(add_help=False)</code>&#160;</td>
+          <td class="paramname"><em>parserMultiplicityTable</em> = <code>argparse.ArgumentParser(add_help&#160;=&#160;False)</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -151,11 +151,11 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multiplicityTable_8py_source.html#l00033">33</a> of file <a class="el" href="multiplicityTable_8py_source.html">multiplicityTable.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>    <span class="keyword">def </span>__init__(self, parserMultiplicityTable=argparse.ArgumentParser(add_help=<span class="keyword">False</span>)):</div>
-<div class="line"><span class="lineno">   34</span>        super(MultiplicityTable, self).__init__()</div>
-<div class="line"><span class="lineno">   35</span>        self.parserMultiplicityTable = parserMultiplicityTable</div>
-<div class="line"><span class="lineno">   36</span> </div>
+<p class="definition">Definition at line <a class="el" href="multiplicityTable_8py_source.html#l00032">32</a> of file <a class="el" href="multiplicityTable_8py_source.html">multiplicityTable.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>    <span class="keyword">def </span>__init__(self, parserMultiplicityTable = argparse.ArgumentParser(add_help = <span class="keyword">False</span>)):</div>
+<div class="line"><span class="lineno">   33</span>        super(MultiplicityTable, self).__init__()</div>
+<div class="line"><span class="lineno">   34</span>        self.parserMultiplicityTable = parserMultiplicityTable</div>
+<div class="line"><span class="lineno">   35</span>    </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -177,20 +177,21 @@ Args:
 </div><div class="memdoc">
 <pre class="fragment">This function allows to add arguments for parser_args() function
 </pre> 
-<p class="definition">Definition at line <a class="el" href="multiplicityTable_8py_source.html#l00037">37</a> of file <a class="el" href="multiplicityTable_8py_source.html">multiplicityTable.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>    <span class="keyword">def </span>addArguments(self):</div>
-<div class="line"><span class="lineno">   38</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   39</span><span class="stringliteral">        This function allows to add arguments </span><span class="keywordflow">for</span> parser_args() function</div>
-<div class="line"><span class="lineno">   40</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   41</span><span class="stringliteral">        </span></div>
-<div class="line"><span class="lineno">   42</span><span class="stringliteral">        </span><span class="comment"># Predefined Selections</span></div>
-<div class="line"><span class="lineno">   43</span>        booleanSelections = [<span class="stringliteral">&quot;true&quot;</span>, <span class="stringliteral">&quot;false&quot;</span>]</div>
-<div class="line"><span class="lineno">   44</span>    </div>
-<div class="line"><span class="lineno">   45</span>        <span class="comment"># Interface</span></div>
-<div class="line"><span class="lineno">   46</span>        groupMultiplicityTable = self.parserMultiplicityTable.add_argument_group(title=<span class="stringliteral">&quot;Data processor options: multiplicity-table&quot;</span>)</div>
-<div class="line"><span class="lineno">   47</span>        groupMultiplicityTable.add_argument(<span class="stringliteral">&quot;--isVertexZeq&quot;</span>, help=<span class="stringliteral">&quot;if true: do vertex Z eq mult table&quot;</span>, action=<span class="stringliteral">&quot;store&quot;</span>, type=str.lower, choices=(booleanSelections)).completer = ChoicesCompleter(booleanSelections)</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>            </div>
+<p class="definition">Definition at line <a class="el" href="multiplicityTable_8py_source.html#l00036">36</a> of file <a class="el" href="multiplicityTable_8py_source.html">multiplicityTable.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>    <span class="keyword">def </span>addArguments(self):</div>
+<div class="line"><span class="lineno">   37</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   38</span><span class="stringliteral">        This function allows to add arguments </span><span class="keywordflow">for</span> parser_args() function</div>
+<div class="line"><span class="lineno">   39</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   40</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">   41</span><span class="stringliteral">        </span><span class="comment"># Predefined Selections</span></div>
+<div class="line"><span class="lineno">   42</span>        booleanSelections = [<span class="stringliteral">&quot;true&quot;</span>, <span class="stringliteral">&quot;false&quot;</span>]</div>
+<div class="line"><span class="lineno">   43</span>        </div>
+<div class="line"><span class="lineno">   44</span>        <span class="comment"># Interface</span></div>
+<div class="line"><span class="lineno">   45</span>        groupMultiplicityTable = self.parserMultiplicityTable.add_argument_group(title = <span class="stringliteral">&quot;Data processor options: multiplicity-table&quot;</span>)</div>
+<div class="line"><span class="lineno">   46</span>        groupMultiplicityTable.add_argument(</div>
+<div class="line"><span class="lineno">   47</span>            <span class="stringliteral">&quot;--isVertexZeq&quot;</span>, help = <span class="stringliteral">&quot;if true: do vertex Z eq mult table&quot;</span>, action = <span class="stringliteral">&quot;store&quot;</span>, type = str.lower, choices = (booleanSelections),</div>
+<div class="line"><span class="lineno">   48</span>            ).completer = ChoicesCompleter(booleanSelections)</div>
+<div class="line"><span class="lineno">   49</span>    </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -218,7 +219,7 @@ Returns:
 <div class="fragment"><div class="line"><span class="lineno">   50</span>    <span class="keyword">def </span>parseArgs(self):</div>
 <div class="line"><span class="lineno">   51</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><span class="lineno">   52</span><span class="stringliteral">        This function allows to save the obtained arguments to the parser_args() function</span></div>
-<div class="line"><span class="lineno">   53</span><span class="stringliteral">        </span></div>
+<div class="line"><span class="lineno">   53</span><span class="stringliteral"></span> </div>
 <div class="line"><span class="lineno">   54</span><span class="stringliteral">        Returns:</span></div>
 <div class="line"><span class="lineno">   55</span><span class="stringliteral">            Namespace: returns parse_args()</span></div>
 <div class="line"><span class="lineno">   56</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
@@ -240,7 +241,7 @@ Returns:
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="multiplicityTable_8py_source.html#l00035">35</a> of file <a class="el" href="multiplicityTable_8py_source.html">multiplicityTable.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="multiplicityTable_8py_source.html#l00034">34</a> of file <a class="el" href="multiplicityTable_8py_source.html">multiplicityTable.py</a>.</p>
 
 </div>
 </div>
